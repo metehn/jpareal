@@ -14,7 +14,7 @@ public class Complex {
     private long complexId;
     private String complexName;
     private double complexValue;
-    @Enumerated(value = EnumType.STRING) //varsayılan EnumType.ORDINAL
+    @Enumerated(value = EnumType.STRING) //varsayılan EnumType.ORDINAL (Veriyi string olarak yazmak için. Varsayılanla deneyince farkı göreceksin)
     private ComplexKind complexKind;
     @Temporal(TemporalType.DATE)//sadete tarih tutuyor. TIME seçseydik sadece zaman tutacaktı. TIMESTAMP tarih ve günü tutuyor
     private Date complexDate;

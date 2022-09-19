@@ -10,7 +10,7 @@ import lombok.*;
         @Index(name = "myindex", columnList = "searchedName"),
         @Index(columnList = "searchedCount", unique = true),
         @Index(columnList = "searchedCount,searchedName")
-}, uniqueConstraints = @UniqueConstraint(columnNames = "singularName")
+}, uniqueConstraints = @UniqueConstraint(columnNames = "singularName") //The @UniqueConstraint annotation is for annotating multiple unique keys at the table level. https://stackoverflow.com/questions/15372654/uniqueconstraint-and-columnunique-true-in-hibernate-annotation
 )
 
 public class Searched {
